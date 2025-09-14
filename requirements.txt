@@ -1,0 +1,4 @@
+nextcord
+quart
+quart-discord
+aiosqlite

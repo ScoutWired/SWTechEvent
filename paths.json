@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name": "Nature's Guardian",
+    "type": "text",
+    "description": "Your mission is to protect endangered wildlife and ecosystems. Challenges include tracking animals, preventing poaching, and environmental "
+  },
+  {
+    "id": "2",
+    "name": "Urban Master",
+    "type": "text",
+    "description": "Your mission is to tackle urban challenges and promote sustainability. Challenges include community service, city planning, and resource conservation."
+  }
+]

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quest Dashboard</title>
+  <link rel="icon" href="https://studiobot.xyz/smallicon.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: 'Rubik', sans-serif;
+      background-color: #d8d8d8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-image: url('https://i.imgur.com/0BmcnZT.png');
+      background-position: center;
+      background-size: cover;
+      color: #fff;
+      padding: 20px;
+      text-align: left; /* Align the header content to the left */
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 20px;
+      width: 95%;
+      margin: 0 auto; /* Added to center the header horizontally */
+      display: flex;
+      justify-content: space-between; /* Align items to the start and end */
+      align-items: center; /* Vertically center the items */
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+      height: auto;
+    }
+
+    .white-box {
+      background-color: white;
+      color: #000;
+      padding: 20px;
+      width: 1200px;
+      height: 400px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 20px;
+      flex: 1; /* Expand to fill the available space */
+    }
+
+    .scheduled-event {
+      background-color: #d8d8d8;
+      color: #000;
+      padding: 20px;
+      width: 300px;
+      height: 200px;
+      border-radius: 20px;
+      text-align: start;
+      display: flex; /* Use flex to control the layout */
+      flex-direction: column; /* Stack the content vertically */
+      justify-content: flex-start; /* Align content to the top */
+    }
+
+    .scheduled-event h6 {
+      margin: 0; /* Remove default margin for the h6 elements */
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin: 30px;
+    }
+
+    .challenge-card {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .submit-button {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+
+    .logout-button {
+      background-color: #ff5151;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .logout-button:hover {
+      background-color: #ff1f1f;
+    }
+
+    .map-button {
+      background-color: #00aeff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .map-button:hover {
+      background-color: #003cff;
+    }
+
+    .footer {
+      background-color: #ffffff;
+      color: #888;
+      padding: 10px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .footer-left {
+      margin-left: 30px;
+    }
+
+    .footer-right {
+      margin-right: 30px;
+    }
+
+    .size {
+      width: 95%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <br>
+  <div class="header">
+    <div class="header-content">
+      <img src="https://i.imgur.com/BCKBr3D.png" alt="Logo" class="header-logo">
+      <div class="white-box">
+        <h3>Welcome: {{ user[0] }}! You currently have {{ points }} points!</h3>
+        <div>
+          <a href="leaderboard"><button class="logout-button">To Leaderboard</button></a>
+        </div>
+        <br>
+        <div class="scheduled-event">
+          <h6>Time Until Next Scheduled Event:</h6>
+          <p id="demo"></p>
+          <h6>Next Event & How To Participate:</h6>
+          <hr>
+          <h6>Scheduled Video Chat! @ discord.scoutwired.org</h6>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <br>
+  <hr>
+  <div class="challenge-card size">
+    <h3>Challennges:</h3>
+    <p>Welcome to Joti-Jota 2024, And more importantly welcome to the Internet Scavanger Extravaganza 2! Here is where you will see all your challanges, every challenge you submit will be marked off by the system. Once the answer is checked as correct you will get your points! If it isn't, you will see it appear here again. Good Luck and Have Fun! If you are just starting out. Complete the Getting Started activity to learn how it all works!</p>
+  </div>
+  {% for challenge in challenges %}
+  <div class="container">
+    <div class="challenge-card">
+      <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+      <div class="card-description">{{ challenge[3] }}</div>
+      <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      <!-- {% if challenge[2] == "text" %}
+        <a href="submit/{{ challenge[0] }}"><button class="submit-button">Submit</button></a>
+      {% elif challenge[2] == "file" %}
+        <div class="card-description">To Submit This Challenge go to #scavenger-extravaganza in the discord and post it there!</div>
+      {% elif challenge[2] == "discord" %}
+        <div class="card-description">To Complete this challenge join our discord server at discord.scoutwired.org and complete it there!</div>
+    {% endif %} -->
+    </div>
+  </div>
+  {% endfor %}
+  {% for path in paths %}
+  <hr>
+  <div class="challenge-card size">
+    <h3>{{ path[0] }} | {{ path[1] }}</h3>
+    <p>{{ path[3] }}</p>
+  </div>
+
+  {% if path[1] == "Nature's Guardian" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Urban Master" %}
+    {% for challenge in path2 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "World Diplomat" %}
+    {% for challenge in path3 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Artistic Visionary" %}
+    {% for challenge in path4 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Innovative Engineer" %}
+    {% for challenge in path5 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Scientific Explorer" %}
+    {% for challenge in path6 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Musical Maestro" %}
+    {% for challenge in path7 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "Robotics Pioneer" %}
+    {% for challenge in path8 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "History Seeker" %}
+    {% for challenge in path9 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% if path[1] == "" %}
+    {% for challenge in path1 %}
+    <div class="container">
+      <div class="challenge-card">
+        <div class="card-name">{{ challenge[1] }} | +{{ challenge[4] }} Points</div>
+        <div class="card-description">{{ challenge[3] }}</div>
+        <a href="challenge/{{ challenge[0] }}"><button class="submit-button">View Challenge</button></a>
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+  {% endfor %}
+  <div class="footer">
+    <div class="footer-left">
+      <a href="https://scoutwired.org">scoutwired.org</a>
+    </div>
+    <div class="footer-right">
+      Made with ❤️ By the ScoutWired Team! - ScoutWired Online Challenge Host V2
+    </div>
+  </div>
+</body>
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Oct 18, 2024 12:00:00").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+  
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+  
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+  
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Event Starting Now!";
+    }
+  }, 1000);
+</script>
+</html>

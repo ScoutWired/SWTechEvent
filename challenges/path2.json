@@ -1,0 +1,98 @@
+[
+  {
+    "id": "25",
+    "name": "Virtual City Tour",
+    "type": "text",
+    "description": ".Explore sydnety! https://www.youvisit.com/tour/sydney Challenge: to explore a city virtually and learn about its history, landmarks, and culture.",
+    "points": 10,
+    "answer": "Test"
+  },
+  {
+    "id": "26",
+    "name": "Community Service Ideas",
+    "type": "text",
+    "description": "Explore websites that list community service projects suitable for everyone. Challenge: to choose a service project that interests them, even if it's an online service activity.",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "27",
+    "name": "Recycling and Waste Reduction",
+    "type": "text",
+    "description": "Use online resources to teach about recycling and reducing waste. Challenge: to create a digital poster or presentation on how to recycle and reduce waste at home.",
+    "points": 30,
+    "answer": "Test"
+  },
+  {
+    "id": "28",
+    "name": "Green Energy Exploration",
+    "type": "text",
+    "description": "Green energy is created without the use of fossil fuels. Challenge: to research a green energy source, such as solar or wind power, and create your own idea for a green energy system. ",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "29",
+    "name": "Urban Green Spaces",
+    "type": "text",
+    "description": "Explore online resources about urban parks and green spaces. Challenge them to create a vision board or design an ideal urban green space. Share your idea board with us. ",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "30",
+    "name": "Community Gardening",
+    "type": "text",
+    "description": "Explore virtual gardening or community garden websites. Challenge: to learn about the basics of gardening and create a virtual garden design or planting plan. Tell us what you would like to be involved in!",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "31",
+    "name": "City Planning Game",
+    "type": "text",
+    "description": "Design a city of your dreams at https://icograms.com/usage-city-illustration. Challenge:to design a sustainable and eco-friendly city, making decisions about transportation, parks, and energy sources. Share your design with us here!",
+    "points": 30,
+    "answer": "Test"
+  },
+  {
+    "id": "32",
+    "name": "Online Sustainability Quiz",
+    "type": "text",
+    "description": "Create a quiz or kahoot about sustainability and eco-friendly practices using online quiz-making tools. Challenge: them to test their family or friends' knowledge. Tell us what's in your quiz!",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "33",
+    "name": "Eco-Friendly Inventions",
+    "type": "text",
+    "description": "Design an eco friendly invention to make your life easier. Take a photo of your design or creation and using imgur upload it here!",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "34",
+    "name": "Online Green Tips",
+    "type": "text",
+    "description": "Find and collect and share online tips for green living with friends and family, promoting simple changes to live more sustainably.",
+    "points": 10,
+    "answer": "Test"
+  },
+  {
+    "id": "35",
+    "name": "City Wildlife Exploration",
+    "type": "text",
+    "description": "Explore online resources about urban wildlife and conservation efforts. Research a local urban wildlife species and create a digital presentation.",
+    "points": 20,
+    "answer": "Test"
+  },
+  {
+    "id": "36",
+    "name": "Sustainable Transportation",
+    "type": "text",
+    "description": "Discuss the importance of sustainable transportation  and explore eco-friendly transportation options online. Challenge: to draw or describe their ideal eco-friendly vehicle.",
+    "points": 20,
+    "answer": "Test"
+  }
+]

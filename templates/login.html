@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISE2 - Login</title>
+    <link rel="icon" href="https://i.imgur.com/BPkm146.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.imgur.com/Phhkzws.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+        
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        .heading {
+            position: absolute;
+            top: 20px;
+            left: 140px;
+            font-size: 24px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Login</h1>
+    <form method="POST" action="/login">
+        <img src="https://i.imgur.com/BPkm146.png" class="logo">
+        <div class="heading">Internet Scavenger Extravaganza</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="code">Username:</label>
+        <input type="text" id="code" name="code" required>
+        
+        <label for="secret_key">Password:</label>
+        <input type="password" id="secret_key" name="secret_key" required>
+        
+        <input type="submit" value="Login">
+        <a href="generate"><button">Don't have a login? Make an account here!</button></a>
+    </form>
+</body>
+</html>

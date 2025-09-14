@@ -1,0 +1,107 @@
+[
+  {
+    "id": "0",
+    "name": "Getting Started!",
+    "type": "text",
+    "description": "Welcome to the Internet Scavanger Extravaganza! Complete this challenge while watching the tutorial: https://www.youtube.com/watch?v=-CafJeCaimg.",
+    "points": 20
+  },
+  {
+    "id": "1",
+    "name": "Minecraft Master",
+    "type": "text",
+    "description": "At scoutwired we have a huge minecraft loving community! How about you show your love of the game by creating a build in our creative world? The best way to do that is with our minecraft build battles! For your challenge you are challenged to join in with one of our build battles and upload a screenshot of your creation and submit the link! Use https://www.file.io/ to upload your creation!",
+    "points": 50
+  },
+    {
+    "id": "2",
+    "name": "Knot Know How",
+    "type": "text",
+    "description": "Scouts know how to tie knots right? Well our silly coordinator rocky here at scoutwired has forgoten how to and needs your help! Create a poster using a tool like canva to show 5 knots of your choosing and how to tie them! Use https://www.file.io/ to send a link for them! And why not put it up in your local hall when your done?",
+    "points": 70
+  },
+  {
+    "id": "3",
+    "name": "Morse Mystery",
+    "type": "file",
+    "description": "A few of our team members are just so good at talking people that they have gotten bored at talking in english and now they only respond to messages that are sent in morse code! Use a morse code chart to attempt to create an introduction about yourself and your scouting experience so far! If you get stuck why not give our new translator bot cypher a go. Accessable in the #morse-code-channel!",
+    "points": 35
+  },
+    {
+    "id": "4",
+    "name": "Video Chats!",
+    "type": "text",
+    "description": "What's wrong with you if you attend a joti at scoutwired without joining a famous SW Video Chat! Tell us about your experience when you join one and one fun thing you learned while talking on there!",
+    "points": 20
+  },
+  {
+    "id": "5",
+    "name": "Armchair Orienteering",
+    "type": "file",
+    "description": "Too lazy to get out of your chair and go for a walk! Well fear no more with our range of games for armchair orienteering in your own home! https://chrissmithard.com/lockdown-orienteering/ Give a few a go and tell us what’s your fav one!",
+    "points": 30
+  },
+    {
+    "id": "6",
+    "name": "The Joti Meme Wall",
+    "type": "text",
+    "description": "Everyone needs a laugh every once in a while and we would love to create a scouting inspired meme wall. Learn how to and use a tool called ImgFlip https://imgflip.com/memegenerator to create a meme and send us the link! We will create a wall of Joti made memes at the end of the event at the Scoutwired’s Got Talent Showcase!",
+    "points": 40
+  },
+  {
+    "id": "7",
+    "name": "Thirty Second Survival Story",
+    "type": "text",
+    "description": "Our voice chats can sometimes get a little spooky and quiet. Lets not let that happen so for this challenge you should write a 30 seconds survival story about an adventurer named bill and what he dose in his day. We’re going to create a collage of everything bill has done at the end of Joti! Present your story in one of our voice chats if you wish for 40 extra points! Submit your completed story.",
+    "points": 75
+  },
+    {
+    "id": "8",
+    "name": "Campfire Song",
+    "type": "text",
+    "description": "This is quite a challenge… Here’s to test your people skills… If you dare, attempt to convince an entire voice chat full of people in ScoutWired to sing a campfire song. Inform a team member of your intent and they will mark this challenge off for you!",
+    "points": 150
+  },
+  {
+    "id": "9",
+    "name": "International Scouting",
+    "type": "text",
+    "description": "Find someone on scoutwired that is from a diffrent country from your own and have a chat to them. Find out about: Their level in scouting, where they're from, what's their most enjoyable scouting experience and what they are intrested in!",
+    "points": 30
+  },
+    {
+    "id": "10",
+    "name": "Mouse Magic",
+    "type": "text",
+    "description": "Solve the maze image below without using the words Forward, Backward, Left, Right, North, West, South or East. Bonus points for the most creative way of instructing how to solve the maze! https://shorturl.at/qRLxG",
+    "points": 20
+  },
+  {
+    "id": "11",
+    "name": "Minigame Madness",
+    "type": "file",
+    "description": "Our minecraft server has a wide selection of over 40 games for you and your friends to play! Sadly don't have any friends no problem, we have plenty of single player games where you can compete aginst others! Give a few a go and send us screenshot of you enjoying the games! Use https://www.file.io to make your screenshot a link",
+    "points": 20
+  },
+  {
+    "id": "12",
+    "name": "Nuts For Nav!",
+    "type": "text",
+    "description": "Our team members here at scoutwired regularly get lost in their surroundings... Silly them... Let's lend them a hand in creating your best map of an imaginary place and show off all you map making skills! All the entries will be shown off at the end of joti! Use https://www.file.io to make your file a link! Feel free to use any tools available to you!",
+    "points": 25
+  },
+    {
+    "id": "13",
+    "name": "Challenge Suggestion Box",
+    "type": "text",
+    "description": "So we have a serious problem... We only made 120 challenges and we promised you 130... What would you like to see or do in these extra 10 challenge spots! If your idea gets picked we will give you an extra 30 points :)",
+    "points": 10
+  },
+  {
+    "id": "14",
+    "name": "Epic Outdoor Survival Quiz",
+    "type": "text",
+    "description": "1. What is the universal distress signal in an emergency? A) Shouting 'Help' three times B) Waving both arms above your head C) Three whistles, three shouts, or three signals in any form D) Building a large bonfire. 2. Which type of tree is best for creating a makeshift shelter in the wilderness? A) Oak B) Pine C) Birch D) Palm 3. What does the mnemonic 'STOP' stand for when you are lost in the wild? A) Stay, Think, Observe, Plan B) Sit, Talk, Organize, Prepare C) Stand, Trace, Orient, Proceed D) Sleep, Travel, Orient, Predict 4. When hiking in areas with no water source, how much water should you carry per person, per day? A) Nothing, I am too good for water... B) 2 liters C) 3 liters D)I'm so good my organs can filter salt water straight from the ocean! 5. Which of the following is NOT a key principle of 'Leave No Trace'? A) Dispose of waste properly B) Minimize campfire impact C) Travel and camp on durable surfaces D) Feed the local wildlife",
+    "points": 50
+  }
+]

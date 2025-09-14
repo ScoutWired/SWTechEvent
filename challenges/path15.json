@@ -1,0 +1,72 @@
+[
+    {
+      "id": "0",
+      "name": "Getting Started!",
+      "type": "text",
+      "description": "Welcome to Reality Check! Complete this challenge while watching the tutorial: https://www.youtube.com/watch?v=8tDEcl29njY.",
+      "points": 15
+    },
+    {
+      "id": "1",
+      "name": "Nature's Guardian",
+      "type": "text",
+      "description": "Your mission is to protect endangered wildlife and ecosystems. Challenges include tracking animals, preventing poaching, and environmental ",
+      "points": 10
+    },
+    {
+      "id": "2",
+      "name": "Adventure Seeker",
+      "type": "discord",
+      "description": "Your mission is to face thrilling adventures and overcome physical obstacles. Challenges include rock climbing, white-water rafting, and survival skills.",
+      "points": 10
+    },
+    {
+      "id": "3",
+      "name": "World Diplomat",
+      "type": "text",
+      "description": "1. Why was scouts initially founded? 2. Where did the first scout camp occur? 3. What did Baden Powell give out that is now an award for leaders? 4. What was the 2nd country to join the scouting movement? 5. What significant event took place in 1910 that greatly influenced the growth of scouting worldwide?",
+      "points": 10
+    },
+    {
+      "id": "4",
+      "name": "Artistic Visionary",
+      "type": "text",
+      "description": "Solve the maze (https://imgur.com/a/cP5DaV3) without using the words: Forward, Backward, Left or Right",
+      "points": 10
+    },
+    {
+      "id": "5",
+      "name": "Innovative Engineer",
+      "type": "file",
+      "description": "Your mission is to use your engineering skills to solve global problems. Challenges include designing sustainable infrastructure, inventing new technologies, and tackling engineering challenges.",
+      "points": 10
+    },
+    {
+      "id": "6",
+      "name": "Scientific Explorer",
+      "type": "text",
+      "description": "Your mission is to explore the frontiers of science and make groundbreaking discoveries. Challenges include conducting experiments, solving scientific mysteries, and advancing knowledge.",
+      "points": 10
+    },
+    {
+      "id": "7",
+      "name": "Musical Maestro",
+      "type": "file",
+      "description": "Your mission is to share the magic of music with the world. Challenges include mastering musical instruments, composing original scores, and performing on global stages.",
+      "points": 10
+    },
+    {
+      "id": "8",
+      "name": "Robotics Pioneer",
+      "type": "file",
+      "description": "Your mission is to advance robotics and automation for the betterment of humanity. Challenges include building robots, programming AI, and solving complex automation problems.",
+      "points": 10
+    },
+    {
+      "id": "9",
+      "name": "History Seeker",
+      "type": "text",
+      "description": "Your mission is to safeguard the planet through scientific research and conservation. Challenges include studying ecosystems, developing eco-friendly solutions, and combating environmental crises.",
+      "points": 10
+    }
+  ]

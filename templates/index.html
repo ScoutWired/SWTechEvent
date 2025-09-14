@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reality Check</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="https://studiobot.xyz/smallicon.png">
+</head>
+<body>
+    <div class="parent">
+        <div class="container">
+            <img class="jeff" src="https://imgur.com/46841d61-5343-4141-b12d-4b2bb9852534">
+            <h4 id="demo"></h4>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://studiobot.xyz/Files/cca00c8ea43a38f854300f16a1a86a2c.png');
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(5px);
+        color: #333;
+    }
+
+    .parent {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        height: 100vh; /* 100% of the viewport height */
+    }
+
+    .container {
+        position: relative;
+        width: 65%; /* Set container width to 50% */
+        padding-top: 38.125%; /* 16:9 aspect ratio (9 / 16 * 100) */
+        overflow: hidden;
+        border-radius: 10px;
+        border: #fff 10px solid;
+        color: #fff;
+        height: 0; /* Add this line to create space for padding-top */
+    }
+
+    .jeff {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top; /* Move the image up */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    h4 {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+</style>
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Oct 20, 2023 08:00:00").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Welcome To Reality Check!";
+      }
+    }, 1000);
+</script>
+</html>

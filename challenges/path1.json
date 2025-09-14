@@ -1,0 +1,66 @@
+[
+    {
+      "id": "17",
+      "name": "Eco Detectives",
+      "type": "text",
+      "description": "Put your detective cap on and help the Peril River with it's Problems. https://biomanbio.com/HTML5GamesandLabs/EcoGames/ecodetectiveshtml5page.html. To win the points write a new fact you learned about biodiverstiy.",
+      "points": 20,
+      "answer": "Test"
+    },
+    {
+      "id": "18",
+      "name": "Envirotmental Quiz",
+      "type": "text",
+      "description": "Test your skills by taking a knowledge quiz! https://www.earthday.org/environmental-literacy-quiz/. To win the points write the score you got!",
+      "points": 20,
+      "answer": "Test"
+    },
+    {
+      "id": "19",
+      "name": "Digital Environmental Cleanup Campaign",
+      "type": "text",
+      "description": "Organize an online campaign to raise awareness about environmental issues, encouraging people to participate in digital cleanups by sharing eco-friendly tips and solutions. To win the points make a poster on sustainability and using imgur send a link of the image here.",
+      "points": 50,
+      "answer": "Test"
+    },
+    {
+      "id": "20",
+      "name": "Wildlife Photography Challenge",
+      "type": "text",
+      "description": "When not online, go out and take a photo of 5 diffrent animials in your local area. To win the points using imgur send a link of the images here. Best ones will be reciving bonus points.",
+      "points": 30,
+      "answer": "Test"
+    },
+    {
+      "id": "21",
+      "name": "Virtual Nature Tour Guide",
+      "type": "text",
+      "description": "Find 3 local fauna or flora species in your area and present them to us on why it is the best species. To win the points using imgur send a link of the slideshow here. Most Convincing will be reciving bonus points.",
+      "points": 30,
+      "answer": "Test"
+    },
+    {
+      "id": "22",
+      "name": "Anti Poaching",
+      "type": "text",
+      "description": "Find an endagered and poached species and propose a way to stop the poaching.",
+      "points": 10,
+      "answer": "Test"
+    },
+    {
+      "id": "23",
+      "name": "Trail Cleanup Challenge (Real Life)",
+      "type": "text",
+      "description": "Walk a nearby trail for 15 minutes, picking up any trash along the way. Submit a photo of the collected trash.",
+      "points": 90,
+      "answer": "Test"
+    },
+    {
+      "id": "24",
+      "name": "Nature Journaling Break (Real Life)",
+      "type": "text",
+      "description": "Spend 15 minutes journaling about your outdoor experience. Include observations, thoughts, or sketches. Share a photo of your journal entry.",
+      "points": 30,
+      "answer": "Test"
+    }
+]
